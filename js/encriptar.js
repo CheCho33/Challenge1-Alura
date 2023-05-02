@@ -10,16 +10,11 @@ function desencriptarTexto(){
 function copiarTextoEncriptado(){
 
 }
-function desencriptar(Texto){
-    
-
-}
-function desencriptar(){
-
-}
 
 
 button.onclick("boton-encripatar") = encriptadoTexto;
+button.onclick("botton-desencriptar") = desencriptarTexto;
+button.onclick("boton-copiar") = copiarTextoEncriptado;
 
 
 /* 
