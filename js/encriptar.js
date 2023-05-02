@@ -3,19 +3,16 @@ function encriptadoTexto(){
     var ParrafoInicial = document.getElementById("text-ingreso").innerHTML;
     var ParrafoResultado = document.getElementById("respueta");
     ParrafoResultado.innerHTML = desencriptar(ParrafoInicial);
+
 }
 function desencriptarTexto(){
-
 }
 function copiarTextoEncriptado(){
-
 }
-
 
 button.onclick("boton-encripatar") = encriptadoTexto;
 button.onclick("botton-desencriptar") = desencriptarTexto;
 button.onclick("boton-copiar") = copiarTextoEncriptado;
-
 
 /* 
 var texto = "Este es un texto con acentos: áéíóú";
