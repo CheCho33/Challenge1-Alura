@@ -54,13 +54,11 @@ function encriptar(texto){
   for (let i = 0; i < texto.length; i++) {
     for (let j = 0; j < codigoSecreto.length; j++){
       
-     // console.log("inicioamos = " + texto);
-      //console.log("inicioamosNuevo = " + textoNuevo);
       if (texto[i] == codigoSecreto[j][0]) {
         textoNuevo = textoNuevo + codigoSecreto[j][1];
         cambioLetra = true;
         break;
-      } else {//debo poner la condicion que solo entre cuando este al final
+      } else {
         cambioLetra = false;
       }      
     }
@@ -83,62 +81,3 @@ function desencriptar(texto){
   }
   return textoNuevo;
 }
-
-
-
-
-
-/*
-//Laves de encriptacion
-// `La letra "e" es convertida para "enter"`
-// `La letra "i" es convertida para "imes"`
-// `La letra "a" es convertida para "ai"`
-// `La letra "o" es convertida para "ober"`
-// `La letra "u" es convertida para "ufat"`
-
-
-function encriptar(stringEncriptada){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-    stringEncriptada = stringEncriptada.toLowerCase()
-
-    for(let i = 0; i < matrizCodigo.length; i++){
-        if(stringEncriptada.includes(matrizCodigo[i][0])){
-            stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
-
-        }
-
-    }
-    return stringEncriptada
-}
-
-
-
-function btnDesencriptar(){
-    const textoEncriptado = desencriptar(textArea.value)
-    mensaje.value = textoEncriptado
-    textArea.value = "";
-    
-}
-
-
-function desencriptar(stringDesencriptada){
-    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-    stringDesencriptada = stringDesencriptada.toLowerCase()
-
-    for(let i = 0; i < matrizCodigo.length; i++){
-        if(stringDesencriptada.includes(matrizCodigo[i][1])){
-            stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1] , matrizCodigo[i][0])
-
-        }
-
-    }
-    return stringDesencriptada
-}
-
-
-function copiar(){
-    mensaje.select();
-    navigator.clipboard.writeText(mensaje.value)
-    mensaje.value = "";
-    alert("Texto Copiado")*/
-
