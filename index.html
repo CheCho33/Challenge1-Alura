@@ -22,23 +22,23 @@
     
     <main>
         <div class="mensaje-ingreso">
-            <textarea id="text-ingreso" cols="20" rows="5" required>Ingrese el texo aquí</textarea>
+            <textarea class="text-ingreso" cols="20" rows="5" placeholder="Ingrese el texto aqui"></textarea>
         </div>
 
         <div class="mensaje-respuesta">
-            <p class="respueta">Respuesta</p>
+            <textarea class="text-respuesta"></textarea>
             <img src="/ing/Muneco.svg" id="img-muneco">
-            <p class="mensaje1">Ningun mensaje fue encontrado</p>
-            <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
-            <button id="boton-copiar" class="copiar">Copiar</button>
+            <p class="mensaje1" id="mensaje1" style="display: none;">Ningun mensaje fue encontrado</p>
+            <p class="mensaje2" id="mensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="boton-copiar" class="copiar" onclick="copiarTextoEncriptado()">Copiar</button>
         </div>
         
         <div class="botones">
                 <img src="/ing/exclamation-circle-fill.svg" alt="">
                 <p>Solo letras minúsculas y sin acentos</p>
                 <div class="bontones">
-                    <button id="boton-encripatar" value="Encritar" class="enviar"> Encritar </button>
-                    <button id="botton-desencriptar" value="Desencritar" class="enviar">Desencritar</button>
+                    <button id="boton-encripatar" value="Encritar" class="enviar" onclick="encriptadoTexto()"> Encritar</button>
+                    <button id="botton-desencriptar" value="Desencritar" class="enviar" onclick="desencriptarTexto()">Desencritar</button>
                 </div>
                 
         </div>
